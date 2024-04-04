@@ -3,6 +3,18 @@ body, h1, h2, p, ul, li {
     padding: 0;
 }
 
+.introduction-content figure {
+    text-align: center;
+}
+
+.introduction-content figcaption {
+    font-style: italic;
+}
+
+main h2 {
+    margin-bottom: 10px;
+}
+
 h2 {
     text-align: center;
 }
