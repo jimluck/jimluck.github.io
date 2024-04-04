@@ -3,7 +3,9 @@ body, h1, h2, p, ul, li {
     padding: 0;
 }
 
-.introduction-content figure {
+figure, figcaption {
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
 
