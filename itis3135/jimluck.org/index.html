@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Von Briesen Enterprises</title>
+    <title>JimLuck Enterprises</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,24 +12,40 @@
             padding: 0;
         }
 
-        #logo {
-            height: 50px; 
-            width: auto;
-        }
-
         header {
             background-color: #333;
             color: #fff;
             padding: 20px;
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; 
+        }
+
+        .header-text {
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            flex-grow: 1; 
             text-align: center;
         }
+
+        .header-text h1 {
+            margin-bottom: 5px; 
+        }
+
+        #logo {
+            height: 60px; 
+            width: auto;
+            margin-right: 20px; 
+        }
+
 
         main {
             padding: 20px;
         }
 
         footer {
-            background-color: #333;
+            background-color: #fb8116;
             color: #fff;
             padding: 10px;
             text-align: center;
@@ -50,22 +66,22 @@
     </style>
 </head>
 <body>
-    <a href="index.html"><img src="images/jimluck_logo.jpg" alt="JimLuck Enterprises Logo" id="logo"></a>
+   
     <header>
-        <h1>Welcome to JimLuck Enterprises</h1>
-        <p>Your partner in design, consulting, and IT solutions</p>
+        <img id="logo" src="../images/jimluck_logo.jpg" alt="JimLuck Enterprises Logo">
+        <div class="header-text">
+            <h1>Welcome to JimLuck Enterprises</h1>
+            <p>Your partner in design, consulting, and IT solutions</p>
+        </div>
     </header>
     
+   
     <main>
         <p>JimLuk.org is a Business Development Service. A strategic facilitation service focused on driving business expansion, operational optimization, and market competitiveness through market access, technology development, consultancy, training, networking, and financial assistance.</p>
     </main>
     
     <footer>
-        
         <p>&copy; 2024 <a href="http://www.jimluck.org" target="_blank" rel="noopener noreferrer">JimLuck Enterprises</a>. All rights reserved.</p>
-
-    </footer>
-
     </footer>
 </body>
 </html>
