@@ -86,3 +86,17 @@ footer ul li a:hover {
 footer p {
     margin-top: 10px;
 }
+
+footer a {
+    color: #ff8800; 
+    text-decoration: none; 
+}
+
+footer a:hover {
+    text-decoration: underline; 
+}
+
+.credits, .validation-links {
+    margin-bottom: 10px;
+}
+
