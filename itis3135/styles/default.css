@@ -27,8 +27,8 @@ body {
 }
 
 .profile-list > li {
-    list-style-type: disc; /* or 'bullet' if you prefer the bullet style */
-    margin-left: 20px; /* Adjust as needed for proper indentation */
+    list-style-type: disc; 
+    margin-left: 20px; 
 }
 
 .category-title {
@@ -60,7 +60,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: none;
 }
 
 nav ul li a {
@@ -92,7 +92,7 @@ footer ul {
 
 footer ul li {
     display: inline;
-    margin-right: 10px;
+    margin-right: none;
 }
 
 footer ul li a {
