@@ -26,6 +26,27 @@ body {
     font-family: Arial, sans-serif; 
 }
 
+.profile-list > li {
+    list-style-type: disc; /* or 'bullet' if you prefer the bullet style */
+    margin-left: 20px; /* Adjust as needed for proper indentation */
+}
+
+.category-title {
+    font-weight: bold; 
+}
+
+.courses {
+    list-style-type: circle; 
+    margin-left: 20px; 
+}
+
+.courses li {
+    list-style-type: circle; /* Open/hollow bullets for nested list items */
+    padding-left: 10px; /* Adjust as needed for proper indentation */
+    margin-left: 20px; 
+    margin-bottom: 5px;
+}
+
 header {
     background-color: #5e454b;
     color: #f4ede6;
@@ -98,5 +119,9 @@ footer a:hover {
 
 .credits, .validation-links {
     margin-bottom: 10px;
+}
+
+.indent {
+    font-style: italic;
 }
 
