@@ -2,6 +2,9 @@ body, h1, h2, p, ul, li {
     margin : 0;
     padding : 0;
     }
+    header p {
+        color: #ff8800; 
+    }
     figure, figcaption {
     margin-left : auto;
     margin-right : auto;
