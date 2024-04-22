@@ -127,5 +127,8 @@ body, h1, h2, p, ul, li {
         margin: 0;
         padding: 0;
     }
+    ol.square-list {
+        list-style-type: square; 
+    }
     
     
