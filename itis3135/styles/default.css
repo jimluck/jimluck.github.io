@@ -153,6 +153,6 @@ input[type="reset"]:hover,
 button:hover {
     background-color: #555; 
 }
-form#contactForm > p {
+.form-introduction {
     margin-bottom: 20px; 
 }
