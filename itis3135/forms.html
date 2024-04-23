@@ -9,7 +9,7 @@
 <body>
     <header>
         <h1>Jimmy Lubeta's Jovial Lion || ITIS 3135</h1>
-        <p><em>Ignite Imagination, Inspire Learning</em></p>
+        <p><em>Access Empowered, Barriers Removed</em></p>
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
@@ -29,39 +29,39 @@
 
     <main>
         <h2>Forms</h2>
-        <h2>Jimmy Lubeta || Jovial Lion</h2>
-        
-        <div>
-                        
-            <figure>
-                <img src="images/Jovial_lion.jpg" alt="A jovial lion">
-                <figcaption><em>A jovial lion</em></figcaption>
-            </figure>
-            
-            <section class="profile">
-                <ul class="profile-list">
-                    <li><span class="category-title">Personal background:</span> Born in the Democratic Republic of Congo (Central Africa) and now living in the US since 2017. Married with two daughters. I speak French, Lingala, Swahili, and English.</li>
-                    <li><span class="category-title">Professional Background:</span> PC Technician, servicing, and repairing devices such as desktop computers, laptops, Uber driver, Amazon Fulfillment Center Associate.</li>
-                    <li><span class="category-title">Academic Background:</span> Some college in Economic, Finances and Development. I am a transfer student, from CPCC with an Associate Degree in Arts. Fourth Semester at UNC Charlotte.</li>
-                    <li><span class="category-title">Background in this Subject:</span> No background in this subject.</li>
-                    <li><span class="category-title">Primary Computer Platform:</span> Linux and Microsoft Windows.</li>
-                    <li><span class="category-title">Courses I'm in & Why:</span>
-                        <ul class="courses">
-                            <li><span><strong>ITIS 3135 - Web Applications Design and Development</strong>: Required Concentration Courses.</li>
-                            <li><strong>ITSC 3155 - Software Engineering</strong>: Major (Computer Science) Core Course</li>
-                            <li><strong>ITCS 3112 - Design and implementation of Object Oriented System</strong>: Elective course for the software engineering concentration.</li>
-                            <li><strong>ITCS 3146 - Introduction to Operating Systems and Networking</strong>: Major (Computer Science) Core Course.</li>
-                        </ul>
-                    </li>
-                    <li><strong>Funny/Interesting Item to Remember me by:</strong> I never give up.</li>
-                    <li>Graduating? BS in Spring 2025.</li>
-                    <li>From/Not from NC? From the D.R. Congo.</li>
-                    <li><strong>I'd also like to Share:</strong> I hold profound love for my God, my family, and all of humanity, wishing peace to every soul.</li>
-                </ul>
-            </section>
-                
-        </div>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required size="50" placeholder="Enter your full name">
 
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="example@domain.com">
+
+            <fieldset>
+                <legend>Select your interests:</legend>
+                <label><input type="checkbox" name="interest" value="workshops"> Workshops</label>
+                <label><input type="checkbox" name="interest" value="seminars"> Seminars</label>
+                <label><input type="checkbox" name="interest" value="networking"> Networking</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferred Contact Method:</legend>
+                <label><input type="radio" name="contact" value="email" checked> Email</label>
+                <label><input type="radio" name="contact" value="phone"> Phone</label>
+            </fieldset>
+
+            <label for="experience">Years of Experience:</label>
+            <select id="experience" name="experience">
+                <option value="1">1-2 years</option>
+                <option value="3">3-5 years</option>
+                <option value="6">6+ years</option>
+            </select>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
     </main>
 
     <footer>
