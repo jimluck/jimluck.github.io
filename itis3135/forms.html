@@ -29,40 +29,47 @@
 
     <main>
         <h2>Forms</h2>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
+        <p>Let us know how we can help you navigate the digital world with ease. Your feedback is valuable in shaping accessible technology.</p>
+        <forms action="#" method="post">
+            <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required size="50" placeholder="Enter your full name">
-
+    
             <label for="phone">Phone Number:</label>
             <input type="tel" id="phone" name="phone" required placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-
-            <label for="email">Email:</label>
+    
+            <label for="email">Email Address:</label>
             <input type="email" id="email" name="email" required placeholder="example@domain.com">
-
+    
             <fieldset>
-                <legend>Select your interests:</legend>
-                <label><input type="checkbox" name="interest" value="workshops"> Workshops</label>
-                <label><input type="checkbox" name="interest" value="seminars"> Seminars</label>
-                <label><input type="checkbox" name="interest" value="networking"> Networking</label>
+                <legend>What can we help you with?</legend>
+                <label><input type="checkbox" name="interest" value="screen_readers"> Screen Readers</label>
+                <label><input type="checkbox" name="interest" value="voice_recognition"> Voice Recognition Software</label>
+                <label><input type="checkbox" name="interest" value="customizable_interface"> Customizable Interface Software</label>
+                <label><input type="checkbox" name="interest" value="assistive_apps"> Assistive Communication Apps</label>
+                <label><input type="checkbox" name="interest" value="accessibility_extensions"> Accessibility Plugins and Extensions</label>
             </fieldset>
-
+    
+            <label for="feedback">Additional Feedback:</label>
+            <textarea id="feedback" name="feedback" placeholder="Please share any specific needs or questions you have." rows="5"></textarea>
+    
             <fieldset>
-                <legend>Preferred Contact Method:</legend>
+                <legend>Your Preferred Contact Method:</legend>
                 <label><input type="radio" name="contact" value="email" checked> Email</label>
                 <label><input type="radio" name="contact" value="phone"> Phone</label>
             </fieldset>
-
-            <label for="experience">Years of Experience:</label>
-            <select id="experience" name="experience">
-                <option value="1">1-2 years</option>
-                <option value="3">3-5 years</option>
-                <option value="6">6+ years</option>
+    
+            <label for="accessibility">Accessibility Requirements:</label>
+            <select id="accessibility" name="accessibility">
+                <option value="no_special_requirements">No Special Requirements</option>
+                <option value="screen_reader_friendly">Screen Reader Friendly</option>
+                <option value="high_contrast">High Contrast</option>
+                <option value="text_to_speech">Text-to-Speech</option>
             </select>
-
+    
             <button type="reset">Reset</button>
             <button type="submit">Submit</button>
         </form>
-    </main>
+    </main>    
 
     <footer>
         <ul>
