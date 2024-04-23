@@ -125,7 +125,6 @@ figure {
 ol.square-list {
     list-style-type: square; 
 }
-/* Additional styles for form elements */
 input[type="text"],
 input[type="tel"],
 input[type="email"],
@@ -136,13 +135,13 @@ select {
     margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: 100%; /* Makes the input take the full width of its container */
+    width: 100%; 
 }
 input[type="submit"],
 input[type="reset"],
 button {
-    background-color: #333; /* Dark background color */
-    color: #fff; /* Light text color */
+    background-color: #333; 
+    color: #fff; 
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -152,5 +151,8 @@ button {
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 button:hover {
-    background-color: #555; /* Slightly lighter on hover */
+    background-color: #555; 
+}
+form#contactForm > p {
+    margin-bottom: 20px; 
 }
