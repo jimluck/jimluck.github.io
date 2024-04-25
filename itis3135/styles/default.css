@@ -156,3 +156,10 @@ button:hover {
 .form-introduction {
     margin-bottom: 20px; 
 }
+.evaluated-website {
+    color: orange;
+}
+
+.evaluated-website:hover {
+    color: darkorange; 
+}
