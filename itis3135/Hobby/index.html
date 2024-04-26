@@ -44,21 +44,25 @@
         h2 {
             color: #484015;
         }
-        p, figcaption {
-            line-height: 1.6;
-            margin-bottom: 10px;
+        figure {
+            text-align: center; /* Center the content */
+            margin: 20px 0; /* Add some space above and below the figure */
         }
-        figcaption {
-            font-style: italic;
-            color: #666;
-        }
+
         img {
-            max-width: 50%;
-            height: auto;
-            border-radius: 5px;
-            display: block;
-            margin: 0 auto;
+            max-width: 60%; /* Make sure the image is not bigger than its container */
+            height: auto; /* Maintain the aspect ratio */
+            border-radius: 5px; /* Optional: Adds rounded corners to the image */
+            display: block; /* Images are inline by default; this ensures it starts on a new line */
+            margin: 0 auto; /* Center the image within the figure */
         }
+
+        figcaption {
+            margin-top: 5px; /* Add some space between the image and the caption */
+            font-style: italic; /* Optional: Italicize the caption text */
+            color: #666; /* Optional: Change the color of the caption text */
+        }
+
         footer a {
             color: #ffd700;
             text-decoration: none;
