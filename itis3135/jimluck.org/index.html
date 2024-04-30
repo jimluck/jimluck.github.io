@@ -3,85 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JimLuck Enterprises</title>
+    <title>JimLuck Enterprises - Business Development Services</title>
     <style>
+        /* Color scheme from Coolors */
+        :root {
+            --deep-blue: #0a122a;
+            --off-white: #f1ece3;
+            --light-beige: #e7decd;
+            --beige: #e9e1d2;
+            --almost-white: #fbfaf8;
+            --leaf-green: #698f3f;
+        }
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f6e2; 
+            font-family: 'Arial', sans-serif;
+            background-color: var(--almost-white);
             margin: 0;
             padding: 0;
+            color: var(--deep-blue);
         }
-
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: var(--deep-blue);
+            color: var(--off-white);
             padding: 20px;
-            display: flex; 
-            align-items: center; 
-            justify-content: space-between; 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
-
-        .header-text {
-            display: flex; 
-            flex-direction: column; 
-            align-items: center; 
-            flex-grow: 1; 
+        header h1 {
+            margin: 0;
+            flex-grow: 1;
             text-align: center;
         }
-
-        .header-text h1 {
-            margin-bottom: 5px; 
-        }
-
         #logo {
-            height: 60px; 
+            height: 60px;
             width: auto;
-            margin-right: 20px; 
         }
-
-
         main {
-            padding: 20px;
+            padding: 80px;
+            background-color: var(--light-beige);
+            text-align: left; /* Aligned text to the left */
+            padding-left: 15%; /* Added left padding */
+            padding-right: 15%; /* Added right padding */
         }
-
+        h2 {
+            margin-top: 0;
+        }
+        ul {
+            margin-top: 20px;
+            list-style-type: circle; /* Non-standard bullet style */
+            padding-left: 40px;
+            color: var(--deep-blue);
+        }
         footer {
-            background-color: #fb8116;
-            color: #fff;
+            background-color: var(--leaf-green);
+            color: var(--off-white);
             padding: 10px;
             text-align: center;
             position: fixed;
             bottom: 0;
             width: 100%;
         }
-
-        main p {
-            text-align: center; 
-            margin-left: 20%; 
-            margin-right: 20%; 
-            background-color: #f0f0b5; 
-            padding: 20px; 
-            border-radius: 10px; 
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        footer a {
+            color: var(--off-white);
+            text-decoration: none;
         }
     </style>
+    <!-- Color scheme URL: https://coolors.co/0a122a-f1ece3-e7decd-e9e1d2-fbfaf8-698f3f -->
 </head>
 <body>
+
+<header>
+    <img id="logo" src="../images/jimluck_logo.jpg" alt="JimLuck Enterprises Logo">
+    <h1>JimLuck Enterprises</h1>
+</header>
+
+<main>
+    <h2>Welcome to Our Business Development Services</h2>
+    <p>At JimLuck Enterprises, we are dedicated to driving business expansion, operational optimization, and market competitiveness through comprehensive business development services.</p>
+    <ul>
+        <li>Market access and expansion strategies</li>
+        <li>Innovative technology development</li>
+        <li>Expert consultancy and advisory services</li>
+        <li>Professional training and educational workshops</li>
+        <li>Networking opportunities with key industry players</li>
+    </ul>
+    <p>Reach out to us today to see how we can help transform your business with our tailored solutions.</p>
+</main>
+
+<footer>
    
-    <header>
-        <img id="logo" src="../images/jimluck_logo.jpg" alt="JimLuck Enterprises Logo">
-        <div class="header-text">
-            <h1>Welcome to JimLuck Enterprises</h1>
-            <p>Your partner in design, consulting, and IT solutions</p>
-        </div>
-    </header>
-    
-   
-    <main>
-        <p>JimLuk.org is a Business Development Service. A strategic facilitation service focused on driving business expansion, operational optimization, and market competitiveness through market access, technology development, consultancy, training, networking, and financial assistance.</p>
-    </main>
-    
-    <footer>
-        <p>&copy; 2024 <a href="http://www.jimluck.org" target="_blank" rel="noopener noreferrer">JimLuck Enterprises</a>. All rights reserved.</p>
-    </footer>
+    <p>© 2024 <a href="https://www.jimluck.org" target="_blank" rel="noopener noreferrer">JimLuck Enterprises</a>. All rights reserved.</p>
+
+    <div class="validation-links">
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+            <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+    </div>
+</footer>
+
+<script>
+    document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+    document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+</script>
+
 </body>
 </html>
