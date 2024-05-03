@@ -147,6 +147,8 @@ button {
     cursor: pointer;
     border-radius: 4px;
     font-size: 16px;
+    margin-top: 10px; 
+    margin-bottom: 10px; 
 }
 input[type="submit"]:hover,
 input[type="reset"]:hover,
@@ -163,3 +165,8 @@ button:hover {
 .evaluated-website:hover {
     color: darkorange; 
 }
+form#userForm {
+    margin-bottom: 20px; /* Increase the bottom margin of the form */
+}
+
+
