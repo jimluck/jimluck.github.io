@@ -16,7 +16,7 @@ h2, figure, figcaption, .courses li {
     text-align: center;
 }
 body {
-    background-color: #f4ede6;
+    background-color: #024; /* Updated to match your screenshot green background */
     font-family: Arial, sans-serif;
 }
 .category-title {
@@ -56,16 +56,17 @@ input[type="text"], input[type="tel"], input[type="email"], select, input[type="
     border-radius: 4px;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 100%; /* Ensure full-width inputs */
 }
 input[type="submit"], input[type="reset"], button {
-    background-color: #333;
+    background-color: #333; /* Darker background for buttons */
     color: #fff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
 }
 input[type="submit"]:hover, input[type="reset"]:hover, button:hover {
-    background-color: #555;
+    background-color: #555; /* Darker on hover */
 }
 .form-introduction, .evaluated-website, .credits, .validation-links {
     margin-bottom: 20px;
@@ -95,7 +96,20 @@ tr:hover {
 input[type="text"], input[type="tel"], input[type="email"], select {
     padding: 8px;
     border: 1px solid #ccc;
-    width: 100%; 
+}
+
+/* Added styles for dynamic course inputs and delete buttons */
+.course, .deleteCourseButton {
+    display: block;
+    width: 100%; /* Full width for better alignment */
+    margin-bottom: 10px; /* Space between course inputs */
+}
+.deleteCourseButton {
+    background-color: #ff4444; /* Red color for delete buttons */
+    color: white;
+}
+.deleteCourseButton:hover {
+    background-color: #ff0000; /* Darker red on hover */
 }
 
 /* Media Queries for Tablet Devices */
