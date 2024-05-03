@@ -3,128 +3,114 @@ body, h1, h2, p, ul, li, figure, figcaption, form {
     margin: 0;
     padding: 0;
 }
+
 header p {
-    color: #ff8800; 
+    color: #ff8800;
 }
+
 .introduction-content figcaption {
     font-style: italic;
 }
+
 main h2, .profile-list > li {
     margin-bottom: 10px;
 }
+
 h2, figure, figcaption, .courses li {
     text-align: center;
 }
+
 body {
-    background-color: #f4ede6; /* Kept original color */
+    background-color: #f4ede6; /* Original color */
     font-family: Arial, sans-serif;
-    margin-left: 40px; /* Set desired left margin */
-    margin-right: 40px; /* Set desired right margin */
+    margin-left: 40px; /* Margin left for all content except header/footer */
+    margin-right: 40px; /* Margin right for all content except header/footer */
 }
 
 .category-title {
     font-weight: bold;
 }
+
 header, footer {
     background-color: #5e454b;
     color: #f4ede6;
     padding: 20px;
     text-align: center;
-    margin-left: 0; /* Remove left margin for header and footer */
-    margin-right: 0; /* Remove right margin for header and footer */
-    width: calc(100% + 40px); /* Extend width to cover the margins, adjust 40px based on your margin settings */
-    position: relative; /* Ensures that the width calculation does not affect the document flow oddly */
-    left: -20px;
+    margin-left: 0;
+    margin-right: 0;
+    width: calc(100% + 80px); /* Extend width to cover the margins */
+    position: relative;
+    left: -40px; /* Align header and footer correctly */
 }
+
 nav ul, footer ul {
     list-style-type: none;
 }
+
 nav ul li, footer ul li {
     display: inline;
 }
+
 nav ul li a, footer ul li a, footer a {
     color: #f4ede6;
     text-decoration: none;
 }
+
 nav ul li a:hover, footer ul li a:hover, footer a:hover {
     color: #d4a373;
     text-decoration: underline;
 }
+
 main {
     padding: 20px;
     margin: 0 auto;
     max-width: 1200px;
     width: 90%;
 }
+
 ol.square-list {
     list-style-type: square;
 }
-input[type="text"], input[type="tel"], input[type="email"], select, input[type="submit"], input[type="reset"], button {
-    font-family: Arial, sans-serif;
-    border-radius: 4px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100%; /* Ensure full-width inputs */
-}
-input[type="submit"], input[type="reset"], button {
-    background-color: #333; /* Retain dark background for buttons */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-input[type="submit"]:hover, input[type="reset"]:hover, button:hover {
-    background-color: #555; /* Darker on hover for buttons */
-}
-.form-introduction, .evaluated-website, .credits, .validation-links {
-    margin-bottom: 20px;
-}
-.evaluated-website:hover {
-    color: darkorange;
-}
-table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: left;
-}
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-th {
-    background-color: #333;
-    color: white;
-}
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-tr:hover {
-    background-color: #ddd;
-}
+
 input[type="text"], input[type="tel"], input[type="email"], select {
     padding: 8px;
     border: 1px solid #ccc;
+    width: 100%;
+}
+
+button, input[type="submit"], input[type="reset"] {
+    font-family: Arial, sans-serif;
+    border-radius: 4px;
+    padding: 5px 10px; /* Smaller padding for smaller button appearance */
+    font-size: 12px; /* Smaller font size for buttons */
+    background-color: #333; /* Dark background for buttons */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #555; /* Darker on hover */
 }
 
 .courses {
-    padding-left: 40px; /* Adjust indentation to your preference */
+    padding-left: 40px; /* Adjust indentation */
     list-style-type: disc; /* Bullets for items */
     text-align: left; /* Ensure text aligns to the left */
 }
 
 .courses li {
     text-align: left; /* Align text to the left within list items */
-    margin-bottom: 5px; /* Space between items for clarity */
+    margin-bottom: 5px; /* Space between items */
 }
+
 input[type="file"] {
     margin-bottom: 10px; /* Add space below the file input */
 }
 
-/* Alternatively, target the specific label for image caption to add top margin */
 label[for="caption"] {
     margin-top: 10px; /* Add space above the image caption label */
 }
-
 
 .deleteCourseButton {
     background-color: #ff4444; /* Red color for delete buttons */
@@ -133,6 +119,7 @@ label[for="caption"] {
     border: none;
     cursor: pointer;
 }
+
 .deleteCourseButton:hover {
     background-color: #ff0000; /* Darker red on hover */
 }
