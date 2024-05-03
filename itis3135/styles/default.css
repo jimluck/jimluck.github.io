@@ -28,40 +28,20 @@ header, footer {
     padding: 20px;
     text-align: center;
 }
-/* Styling for navigation and footer lists to exclude any specific class styling */
 nav ul, footer ul {
-    list-style-type: none; /* Removes bullets */
-    padding: 0; /* Removes default padding */
-    margin: 0; /* Aligns with the layout */
+    list-style-type: none;
 }
-
 nav ul li, footer ul li {
-    display: inline-block; /* Changed from inline for better control, e.g., spacing */
-    margin-right: 20px; /* Adds horizontal space between menu items */
+    display: inline;
 }
-
 nav ul li a, footer ul li a, footer a {
-    color: #f4ede6; /* Light color for readability against dark background */
-    text-decoration: none; /* No underline by default */
-    padding: 5px; /* Padding for better click area */
+    color: #f4ede6;
+    text-decoration: none;
 }
-
 nav ul li a:hover, footer ul li a:hover, footer a:hover {
-    color: #d4a373; /* Highlight color on hover */
-    text-decoration: underline; /* Underline on hover for clarity */
+    color: #d4a373;
+    text-decoration: underline;
 }
-
-/* Specific styling for the .courses class to ensure it is styled independently */
-.courses {
-    list-style-type: disc; /* Ensures visibility of bullet points */
-    padding-left: 20px; /* Proper indentation for list */
-}
-
-.courses li {
-    display: list-item; /* Ensures list item behavior */
-    margin-bottom: 5px; /* Space between course items */
-}
-
 main {
     padding: 20px;
     margin: 0 auto;
