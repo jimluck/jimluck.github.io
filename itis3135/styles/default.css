@@ -103,6 +103,16 @@ input[type="text"], input[type="tel"], input[type="email"], select {
     display: block;
     margin-bottom: 10px; /* Space between course inputs */
 }
+.courses {
+    text-align: left; /* Align text to the left */
+    padding-left: 40px; /* Add indentation to simulate a tab */
+    list-style-type: disc; /* Use bullets */
+}
+
+.courses li {
+    margin-bottom: 5px; /* Optional: adds space between list items */
+}
+
 .deleteCourseButton {
     background-color: #ff4444; /* Red color for delete buttons */
     color: white;
