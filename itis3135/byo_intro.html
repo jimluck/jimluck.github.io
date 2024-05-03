@@ -35,11 +35,14 @@
                     <input type="text" id="webDevBackground" name="webDevBackground" placeholder="Your Web Development Background" required></li>
                 <li><label for="primaryPlatform"><strong>Primary Computer Platform:</strong></label>
                     <input type="text" id="primaryPlatform" name="primaryPlatform" placeholder="Your Primary Platform" required></li>
-                <li><label for="courses"><strong>Courses currently taking:</strong></label>
-                    <div id="coursesContainer">
-                        <input type="text" name="course" class="course" placeholder="Course Name">
-                        <button type="button" onclick="addCourse()">Add Course</button>
-                    </div></li>
+                    <li>
+                        <label for="course"><strong>Courses currently taking:</strong></label>
+                        <div id="coursesContainer">
+                            <input type="text" name="course" id="course" class="course" placeholder="Course Name">
+                            <button type="button" onclick="addCourse()">Add Course</button>
+                        </div>
+                    </li>
+                    
                 <li><label for="funFact"><strong>Funny thing?</strong></label>
                     <input type="text" id="funFact" name="funFact" placeholder="Your Funny Fact"></li>
                 <li><label for="anyOtherInfo"><strong>Anything else?</strong></label>
