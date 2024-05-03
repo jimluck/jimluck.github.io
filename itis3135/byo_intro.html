@@ -17,42 +17,38 @@
         <form id="introForm">
             <ul>
                 <li><label for="name"><strong>Name:</strong></label>
-                    <input type="text" id="name" name="name" value="Your Name" required></li>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required></li>
                 <li><label for="mascot"><strong>Mascot:</strong></label>
-                    <input type="text" id="mascot" name="mascot" value="Your Mascot" required></li>
+                    <input type="text" id="mascot" name="mascot" placeholder="Your Mascot" required></li>
                 <li><label for="image"><strong>Image:</strong></label>
                     <input type="file" id="image" name="image" accept="image/png, image/jpeg" required></li>
                 <li><label for="caption"><strong>Image Caption:</strong></label>
-                    <input type="text" id="caption" name="caption" value="Your Caption" required></li>
+                    <input type="text" id="caption" name="caption" placeholder="Your Caption" required></li>
                 <li><label for="personalBackground"><strong>Personal Background:</strong></label>
-                    <input type="text" id="personalBackground" name="personalBackground" value="Your Personal Background" required></li>
+                    <input type="text" id="personalBackground" name="personalBackground" placeholder="Your Personal Background" required></li>
                 <li><label for="professionalBackground"><strong>Professional Background:</strong></label>
-                    <input type="text" id="professionalBackground" name="professionalBackground" value="Your Professional Background" required></li>
+                    <input type="text" id="professionalBackground" name="professionalBackground" placeholder="Your Professional Background" required></li>
                 <li><label for="academicBackground"><strong>Academic Background:</strong></label>
-                    <input type="text" id="academicBackground" name="academicBackground" value="Your Academic Background" required></li>
+                    <input type="text" id="academicBackground" name="academicBackground" placeholder="Your Academic Background" required></li>
                 <li><label for="webDevBackground"><strong>Background in Web Development:</strong></label>
-                    <input type="text" id="webDevBackground" name="webDevBackground" value="Your Web Development Background" required></li>
+                    <input type="text" id="webDevBackground" name="webDevBackground" placeholder="Your Web Development Background" required></li>
                 <li><label for="primaryPlatform"><strong>Primary Computer Platform:</strong></label>
-                    <input type="text" id="primaryPlatform" name="primaryPlatform" value="Your Primary Platform" required></li>
+                    <input type="text" id="primaryPlatform" name="primaryPlatform" placeholder="Your Primary Platform" required></li>
                 <li><label for="courses"><strong>Courses currently taking:</strong></label>
                     <div id="coursesContainer">
-                        <input type="text" name="course" class="course" value="Your Course">
-                    </div>
-                    <button type="button" onclick="addCourse()">Add Course</button></li>
+                        <input type="text" name="course" class="course" placeholder="Course Name">
+                        <button type="button" onclick="addCourse()">Add Course</button>
+                    </div></li>
                 <li><label for="funFact"><strong>Funny thing?</strong></label>
-                    <input type="text" id="funFact" name="funFact" value="Your Funny Fact"></li>
+                    <input type="text" id="funFact" name="funFact" placeholder="Your Funny Fact"></li>
                 <li><label for="anyOtherInfo"><strong>Anything else?</strong></label>
-                    <input type="text" id="anyOtherInfo" name="anyOtherInfo" value="Additional Info"></li>
+                    <input type="text" id="anyOtherInfo" name="anyOtherInfo" placeholder="Additional Info"></li>
                 <li><input type="checkbox" id="agree" name="agree" required>
                     <label for="agree">I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label></li>
             </ul>
             <input type="submit" value="Submit">
             <input type="reset" value="Reset">
         </form>
-        <div id="resultDisplay" style="display:none;">
-            <ul id="resultList"></ul>
-            <button onclick="resetResult()">Reset Everything</button>
-        </div>
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
