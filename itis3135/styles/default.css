@@ -144,7 +144,19 @@ label[for="caption"] {
     font-size: 1.5rem;
     text-align: right;
 }
-
+.calculator__keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns grid layout */
+  }
+  
+  .key--operator, .key--equal {
+    background-color: #666; /* Differentiate operators and equal key */
+  }
+  
+  .key--operator:active, .key--equal:active {
+    background-color: #fe9241; /* Visual feedback on click */
+  }
+  
 /* Media Queries for Tablet Devices */
 @media (min-width: 601px) and (max-width: 980px) {
     main {

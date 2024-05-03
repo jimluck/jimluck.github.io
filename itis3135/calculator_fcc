@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimmy Lubeta's Jovial Lion || ITIS 3135 || Calculator FCC</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="scripts/calculator_fcc.js"></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Calculator FCC</h2>
+        <div class="calculator">
+            <div class="calculator__display">0</div> <!-- Display where the result/inputs will show -->
+            <div class="calculator__keys">
+              <button class="key--operator" data-action="add">+</button>
+              <button class="key--operator" data-action="subtract">-</button>
+              <button class="key--operator" data-action="multiply">×</button>
+              <button class="key--operator" data-action="divide">÷</button>
+              <button>7</button>
+              <button>8</button>
+              <button>9</button>
+              <button>4</button>
+              <button>5</button>
+              <button>6</button>
+              <button>1</button>
+              <button>2</button>
+              <button>3</button>
+              <button>0</button>
+              <button data-action="decimal">.</button>
+              <button data-action="clear">AC</button>
+              <button class="key--equal" data-action="calculate">=</button>
+            </div>
+          </div>
+          
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+
+</body>
+</html>
