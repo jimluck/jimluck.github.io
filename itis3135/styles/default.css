@@ -1,103 +1,77 @@
-body, h1, h2, p, ul, li {
+/* Base styles for all elements */
+body, h1, h2, p, ul, li, figure, figcaption, form {
     margin: 0;
     padding: 0;
 }
 header p {
     color: #ff8800; 
 }
-figure, figcaption {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
 .introduction-content figcaption {
     font-style: italic;
 }
-main h2 {
+main h2, .profile-list > li {
     margin-bottom: 10px;
 }
-h2 {
+h2, figure, figcaption, .courses li {
     text-align: center;
 }
 body {
     background-color: #f4ede6;
     font-family: Arial, sans-serif;
 }
-.profile-list > li {
-    list-style-type: disc;
-    margin-left: 20px;
-}
 .category-title {
     font-weight: bold;
 }
-.courses {
-    list-style-type: circle;
-    margin-left: 20px;
-}
-.courses li {
-    list-style-type: circle;
-    padding-left: 10px;
-    margin-left: 20px;
-    margin-bottom: 5px;
-}
-header {
+header, footer {
     background-color: #5e454b;
     color: #f4ede6;
     padding: 20px;
     text-align: center;
 }
-nav ul {
+nav ul, footer ul {
     list-style-type: none;
 }
-nav ul li {
+nav ul li, footer ul li {
     display: inline;
 }
-nav ul li a {
+nav ul li a, footer ul li a, footer a {
     color: #f4ede6;
     text-decoration: none;
 }
-nav ul li a:hover {
+nav ul li a:hover, footer ul li a:hover, footer a:hover {
     color: #d4a373;
+    text-decoration: underline;
 }
 main {
     padding: 20px;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 1200px;
+    width: 90%;
 }
-footer {
-    background-color: #5e454b;
-    color: #f4ede6;
-    padding: 20px;
-    text-align: center;
+ol.square-list {
+    list-style-type: square; 
 }
-footer ul {
-    list-style-type: none;
-}
-footer ul li {
-    display: inline;
-}
-footer ul li a {
-    color: #f4ede6;
-    text-decoration: none;
-}
-footer ul li a:hover {
-    color: #d4a373;
-}
-footer p {
+input[type="text"], input[type="tel"], input[type="email"], select, input[type="submit"], input[type="reset"], button {
+    font-family: Arial, sans-serif;
+    border-radius: 4px;
     margin-top: 10px;
-}
-footer a {
-    color: #ff8800;
-    text-decoration: none;
-}
-footer a:hover {
-    text-decoration: underline;
-}
-.credits, .validation-links {
     margin-bottom: 10px;
 }
-.indent {
-    font-style: italic;
+input[type="submit"], input[type="reset"], button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+input[type="submit"]:hover, input[type="reset"]:hover, button:hover {
+    background-color: #555;
+}
+.form-introduction, .evaluated-website, .credits, .validation-links {
+    margin-bottom: 20px;
+}
+.evaluated-website:hover {
+    color: darkorange;
 }
 table {
     width: 100%;
@@ -118,55 +92,22 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #ddd;
 }
-figure {
-    margin: 0;
-    padding: 0;
-}
-ol.square-list {
-    list-style-type: square; 
-}
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-select {
-    color: #333;
-    font-family: Arial, sans-serif;
+input[type="text"], input[type="tel"], input[type="email"], select {
     padding: 8px;
-    margin: 5px 0;
     border: 1px solid #ccc;
-    border-radius: 4px;
     width: 100%; 
 }
-input[type="submit"],
-input[type="reset"],
-button {
-    background-color: #333; 
-    color: #fff; 
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 16px;
-    margin-top: 10px; 
-    margin-bottom: 10px; 
-}
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-button:hover {
-    background-color: #555; 
-}
-.form-introduction {
-    margin-bottom: 20px; 
-}
-.evaluated-website {
-    color: orange;
+
+/* Media Queries for Tablet Devices */
+@media (min-width: 601px) and (max-width: 980px) {
+    main {
+        width: 95%; /* Slightly more width for tablets */
+    }
 }
 
-.evaluated-website:hover {
-    color: darkorange; 
+/* Media Queries for Mobile Devices */
+@media (max-width: 600px) {
+    main {
+        width: 100%; /* Full width for mobile devices */
+    }
 }
-form#userForm {
-    margin-bottom: 20px; /* Increase the bottom margin of the form */
-}
-
-
