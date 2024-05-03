@@ -18,8 +18,8 @@ h2, figure, figcaption, .courses li {
 body {
     background-color: #f4ede6; /* Kept original color */
     font-family: Arial, sans-serif;
-    margin-left: 20px; /* Set desired left margin */
-    margin-right: 20px; /* Set desired right margin */
+    margin-left: 40px; /* Set desired left margin */
+    margin-right: 40px; /* Set desired right margin */
 }
 
 .category-title {
