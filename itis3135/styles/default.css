@@ -30,6 +30,11 @@ header, footer {
     color: #f4ede6;
     padding: 20px;
     text-align: center;
+    margin-left: 0; /* Remove left margin for header and footer */
+    margin-right: 0; /* Remove right margin for header and footer */
+    width: calc(100% + 40px); /* Extend width to cover the margins, adjust 40px based on your margin settings */
+    position: relative; /* Ensures that the width calculation does not affect the document flow oddly */
+    left: -20px;
 }
 nav ul, footer ul {
     list-style-type: none;
