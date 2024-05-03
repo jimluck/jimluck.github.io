@@ -18,7 +18,10 @@ h2, figure, figcaption, .courses li {
 body {
     background-color: #f4ede6; /* Kept original color */
     font-family: Arial, sans-serif;
+    margin-left: 20px; /* Set desired left margin */
+    margin-right: 20px; /* Set desired right margin */
 }
+
 .category-title {
     font-weight: bold;
 }
@@ -107,6 +110,14 @@ input[type="text"], input[type="tel"], input[type="email"], select {
 .courses li {
     text-align: left; /* Align text to the left within list items */
     margin-bottom: 5px; /* Space between items for clarity */
+}
+input[type="file"] {
+    margin-bottom: 10px; /* Add space below the file input */
+}
+
+/* Alternatively, target the specific label for image caption to add top margin */
+label[for="caption"] {
+    margin-top: 10px; /* Add space above the image caption label */
 }
 
 
