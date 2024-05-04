@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimmy Lubeta's Jovial Lion || ITIS 3135 || Arrays</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <button onclick="toggleCSS()">Toggle CSS</button>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Manage Salaries</h2>
+        <p>Welcome to the Salary Management System. Here you can add, modify, and view employee salary data.</p>
+        <!-- Add Salary -->
+        <input id="nameInput" placeholder="Enter employee name" type="text" autofocus>
+        <input id="salaryInput" placeholder="Enter salary" type="number">
+        <button onclick="addSalary()">Add Salary</button>
+
+        <!-- Modify Salary -->
+        <select id="employeeSelect"></select>
+        <input id="newSalaryInput" placeholder="Enter new salary" type="number">
+        <button onclick="modifySalary()">Modify Salary</button>
+
+        <!-- Results -->
+        <div id="results"></div>
+        <button onclick="displayResults()">Display Results</button>
+
+        <!-- Salary Table -->
+        <table id="results_table">
+            <thead>
+                <tr>
+                    <th>Employee</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button onclick="displaySalary()">Display Salary Table</button>
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+
+</body>
+</html>
