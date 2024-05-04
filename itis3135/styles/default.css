@@ -4,6 +4,14 @@ body, h1, h2, p, ul, li, figure, figcaption, form {
     padding: 0;
 }
 
+/* Specific styles for <h2> elements */
+h2 {
+    margin-bottom: 10px; /* Applied to all <h2> uniformly */
+    text-align: center; /* Central alignment for all <h2> */
+    font-weight: bold; /* If you want all <h2> to be bold */
+}
+
+/* Other specific styles */
 header p {
     color: #ff8800;
 }
@@ -12,24 +20,11 @@ header p {
     font-style: italic;
 }
 
-main h2, .profile-list > li {
-    margin-bottom: 10px;
-}
-
-h2, figure, figcaption, .courses li {
-    text-align: center;
-}
-
 body {
     background-color: #f4ede6; /* Original color */
     font-family: Arial, sans-serif;
     margin-left: 40px; /* Margin left for all content except header/footer */
     margin-right: 40px; /* Margin right for all content except header/footer */
-    
-}
-
-.category-title {
-    font-weight: bold;
 }
 
 header, footer {
