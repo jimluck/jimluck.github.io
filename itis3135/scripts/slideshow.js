@@ -10,7 +10,7 @@ $(document).ready(function() {
         { src: '../images/book.jpg', caption: 'B for Book' },  // Update as per actual image name
         { src: '../images/elephant.jpg', caption: 'E for Elephant' },  // Update as per actual image name
         { src: '../images/tree.jpg', caption: 'T for Tree' },
-        { src: '../images/apple.jpg', caption: 'A for Apple' }  // Update as per actual image name
+        { src: '../images/apple.jpg', caption: 'A for Apple' }
     ];
 
     let currentImage = 0;
