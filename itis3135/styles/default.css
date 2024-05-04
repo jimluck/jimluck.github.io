@@ -169,6 +169,40 @@ label[for="caption"] {
 .key--operator:hover, .key--equal:hover {
     background-color: #ff7f50;
 }
+#slideshow {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+}
+
+.slides div {
+    font-size: 20px;
+    color: #333;
+}
+
+.image-list li {
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    background-color: #f0f0f0;
+}
+
+.image-list li.selected {
+    background-color: #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+}
+
 
 /* Media Queries for Tablet Devices */
 @media (min-width: 601px) and (max-width: 980px) {

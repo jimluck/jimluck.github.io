@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimmy Lubeta's Jovial Lion || ITIS 3135 || Slideshow</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <button onclick="toggleCSS()">Toggle CSS</button>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Slideshow</h2>
+        <div id="slideshow">
+            <button id="prev">Previous</button>
+            <div class="slides"></div>
+            <button id="next">Next</button>
+            <ul class="image-list"></ul>
+        </div>
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        document.getElementById("validation_link_disability").setAttribute("href", "https://wave.webaim.org/report#/" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="slideshow.js"></script>
+
+</body>
+</html>
