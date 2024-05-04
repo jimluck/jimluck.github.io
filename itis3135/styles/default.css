@@ -93,6 +93,10 @@ button, input[type="submit"], input[type="reset"] {
 button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
     background-color: #555;
 }
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
 
 .courses {
     padding-left: 40px;

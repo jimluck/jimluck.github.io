@@ -15,6 +15,7 @@ function addSalary() {
     persons.push(name);
     salaries.push(salary);
     updateEmployeeSelect();
+    displaySalary(); // Refresh the table view
     document.getElementById('nameInput').value = '';
     document.getElementById('salaryInput').value = '';
     document.getElementById('nameInput').focus();
@@ -22,24 +23,26 @@ function addSalary() {
 
 function modifySalary() {
     let select = document.getElementById('employeeSelect');
+    let index = select.value;
     let newSalary = parseFloat(document.getElementById('newSalaryInput').value);
-    if (select.selectedIndex === -1 || isNaN(newSalary)) {
-        alert('Select a valid employee and enter a numeric value for the new salary.');
-        return;
+    if (index !== '' && !isNaN(newSalary)) {
+        salaries[index] = newSalary;
+        displaySalary(); // Refresh the table view
+    } else {
+        alert('Please select an employee and enter a valid new salary.');
     }
-    salaries[select.selectedIndex] = newSalary;
 }
 
 function displayResults() {
+    if (salaries.length === 0) {
+        alert("No salary data available to display.");
+        return;
+    }
     let total = salaries.reduce((acc, curr) => acc + curr, 0);
-    let average = salaries.length > 0 ? total / salaries.length : 0;
-    let highest = salaries.length > 0 ? Math.max(...salaries) : 0;
+    let average = total / salaries.length;
+    let highest = Math.max(...salaries);
     let resultsDiv = document.getElementById('results');
-    resultsDiv.innerHTML = `
-        <h2>Salary Results</h2>
-        <p>Average Salary: ${average.toFixed(2)}</p>
-        <p>Highest Salary: ${highest.toFixed(2)}</p>
-    `;
+    resultsDiv.innerHTML = `<h2>Salary Results</h2><p>Average Salary: ${average.toFixed(2)}</p><p>Highest Salary: ${highest.toFixed(2)}</p>`;
 }
 
 function displaySalary() {
