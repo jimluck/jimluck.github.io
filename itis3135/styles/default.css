@@ -1,5 +1,5 @@
 /* Base styles for all elements */
-body, h1, h2, p, ul, li, figure, figcaption, form {
+body, h1, p, ul, li, figure, figcaption, form {
     margin: 0;
     padding: 0;
 }
@@ -9,6 +9,7 @@ h2 {
     margin-bottom: 10px; /* Applied to all <h2> uniformly */
     text-align: center; /* Central alignment for all <h2> */
     font-weight: bold; /* If you want all <h2> to be bold */
+    margin: 0;
 }
 
 /* Other specific styles */
