@@ -1,13 +1,14 @@
 function setup() {
-    createCanvas(windowWidth, windowHeight);
-}
-
-function draw() {
-    background(220); // Set background to a light grey
+    createCanvas(720, 400);
+    background(200);
+  }
+  
+  function draw() {
     if (mouseIsPressed) {
-        fill(0); // Fill black if mouse is pressed
+      fill(0);
     } else {
-        fill(255); // Fill white otherwise
+      fill(255);
     }
-    ellipse(mouseX, mouseY, 80, 80); // Draw ellipse at mouse position
-}
+    ellipse(mouseX, mouseY, 80, 80);
+  }
+  
