@@ -13,3 +13,8 @@ function calculate() {
 function clearDisplay() {
     document.getElementById('display').value = '';
 }
+function toggleCSS() {
+    var stylesheet = document.getElementById('mainStyle');
+    stylesheet.disabled = !stylesheet.disabled;
+}
+

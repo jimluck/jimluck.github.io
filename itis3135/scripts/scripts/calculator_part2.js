@@ -25,3 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+function toggleCSS() {
+    var stylesheet = document.getElementById('mainStyle');
+    stylesheet.disabled = !stylesheet.disabled;
+}
+

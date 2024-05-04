@@ -32,3 +32,8 @@ function addCourse() {
     container.appendChild(newCourseInput);
     container.appendChild(deleteButton);
 }
+function toggleCSS() {
+    var stylesheet = document.getElementById('mainStyle');
+    stylesheet.disabled = !stylesheet.disabled;
+}
+

@@ -67,3 +67,8 @@ document.addEventListener("DOMContentLoaded", function() {
         if (operator === 'divide') return firstNum / secondNum;
     }
 });
+function toggleCSS() {
+    var stylesheet = document.getElementById('mainStyle');
+    stylesheet.disabled = !stylesheet.disabled;
+}
+

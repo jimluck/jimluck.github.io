@@ -36,3 +36,7 @@ function shareAccessibilityResource() {
 function performHealthCheck() {
     alert("All system functionalities are operational!");
 }
+function toggleCSS() {
+    var stylesheet = document.getElementById('mainStyle');
+    stylesheet.disabled = !stylesheet.disabled;
+}
