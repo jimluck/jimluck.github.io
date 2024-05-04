@@ -12,23 +12,27 @@
         <div data-include="components/header.html"></div>
     </header>
     <main>
-        <h2>Manage Salaries</h2>
-        <p>Welcome to the Salary Management System. Here you can add, modify, and view employee salary data.</p>
-        <!-- Add Salary -->
-        <input id="nameInput" placeholder="Enter employee name" type="text" autofocus>
-        <input id="salaryInput" placeholder="Enter salary" type="number">
+        <h2>Manage Employee Salaries</h2>
+        <p>Welcome to the Salary Management System. Add, modify, and view employee salaries efficiently.</p>
+        
+        <!-- Inputs for Adding Salary -->
+        <input id="nameInput" type="text" placeholder="Employee Name" autofocus>
+        <input id="salaryInput" type="number" placeholder="Salary">
         <button onclick="addSalary()">Add Salary</button>
 
-        <!-- Modify Salary -->
-        <select id="employeeSelect"></select>
-        <input id="newSalaryInput" placeholder="Enter new salary" type="number">
+        <!-- Dropdown and Input for Modifying Salary -->
+        <select id="employeeSelect" aria-label="Select Employee"></select>
+        <input id="newSalaryInput" type="number" placeholder="New Salary">
         <button onclick="modifySalary()">Modify Salary</button>
 
-        <!-- Results -->
-        <div id="results"></div>
+        <!-- Buttons for Display Functions -->
         <button onclick="displayResults()">Display Results</button>
+        <button onclick="displaySalary()">Display Salary Table</button>
 
-        <!-- Salary Table -->
+        <!-- Div for Displaying Results -->
+        <div id="results"></div>
+
+        <!-- Table for Displaying Salaries -->
         <table id="results_table">
             <thead>
                 <tr>
@@ -38,7 +42,6 @@
             </thead>
             <tbody></tbody>
         </table>
-        <button onclick="displaySalary()">Display Salary Table</button>
     </main>
 
     <footer>

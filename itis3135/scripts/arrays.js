@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('nameInput').focus();
 });
 
@@ -9,37 +9,34 @@ function addSalary() {
     let name = document.getElementById('nameInput').value.trim();
     let salary = parseFloat(document.getElementById('salaryInput').value);
     if (name === '' || isNaN(salary)) {
-        alert('Please enter a valid name and a numeric salary.');
+        alert('Both name and salary fields are required, and salary must be a number.');
         return;
     }
     persons.push(name);
     salaries.push(salary);
+    updateEmployeeSelect();
     document.getElementById('nameInput').value = '';
     document.getElementById('salaryInput').value = '';
     document.getElementById('nameInput').focus();
-    updateEmployeeSelect();
-    displaySalary(); // Update the table display
 }
 
 function modifySalary() {
     let select = document.getElementById('employeeSelect');
     let newSalary = parseFloat(document.getElementById('newSalaryInput').value);
-    if (select.selectedIndex !== -1 && !isNaN(newSalary)) {
-        salaries[select.selectedIndex] = newSalary;
-        displaySalary(); // Update the table display
-    } else {
-        alert('Invalid salary or no employee selected.');
+    if (select.selectedIndex === -1 || isNaN(newSalary)) {
+        alert('Select a valid employee and enter a numeric value for the new salary.');
+        return;
     }
-    document.getElementById('newSalaryInput').value = '';
+    salaries[select.selectedIndex] = newSalary;
 }
 
 function displayResults() {
     let total = salaries.reduce((acc, curr) => acc + curr, 0);
-    let average = total / salaries.length;
-    let highest = Math.max(...salaries);
+    let average = salaries.length > 0 ? total / salaries.length : 0;
+    let highest = salaries.length > 0 ? Math.max(...salaries) : 0;
     let resultsDiv = document.getElementById('results');
     resultsDiv.innerHTML = `
-        <h2>Salary Analysis</h2>
+        <h2>Salary Results</h2>
         <p>Average Salary: ${average.toFixed(2)}</p>
         <p>Highest Salary: ${highest.toFixed(2)}</p>
     `;
