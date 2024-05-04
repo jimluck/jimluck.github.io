@@ -1,10 +1,12 @@
-document.getElementById('nameInput').focus();
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('nameInput').focus();
+});
 
 let persons = [];
 let salaries = [];
 
 function addSalary() {
-    let name = document.getElementById('nameInput').value;
+    let name = document.getElementById('nameInput').value.trim();
     let salary = parseFloat(document.getElementById('salaryInput').value);
     if (name === '' || isNaN(salary)) {
         alert('Please enter a valid name and a numeric salary.');
@@ -16,6 +18,7 @@ function addSalary() {
     document.getElementById('salaryInput').value = '';
     document.getElementById('nameInput').focus();
     updateEmployeeSelect();
+    displaySalary(); // Update the table display
 }
 
 function modifySalary() {
@@ -23,9 +26,11 @@ function modifySalary() {
     let newSalary = parseFloat(document.getElementById('newSalaryInput').value);
     if (select.selectedIndex !== -1 && !isNaN(newSalary)) {
         salaries[select.selectedIndex] = newSalary;
+        displaySalary(); // Update the table display
     } else {
         alert('Invalid salary or no employee selected.');
     }
+    document.getElementById('newSalaryInput').value = '';
 }
 
 function displayResults() {
@@ -42,7 +47,7 @@ function displayResults() {
 
 function displaySalary() {
     let tableBody = document.getElementById('results_table').getElementsByTagName('tbody')[0];
-    tableBody.innerHTML = persons.map((person, index) => `<tr><td>${person}</td><td>${salaries[index]}</td></tr>`).join('');
+    tableBody.innerHTML = persons.map((person, index) => `<tr><td>${person}</td><td>${salaries[index].toFixed(2)}</td></tr>`).join('');
 }
 
 function updateEmployeeSelect() {
