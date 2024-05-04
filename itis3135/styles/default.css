@@ -143,11 +143,6 @@ label[for="caption"] {
     text-align: right;
 }
 
-.calculator__keys {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1px;
-}
 
 .calculator__keys button {
     background-color: #fff;
